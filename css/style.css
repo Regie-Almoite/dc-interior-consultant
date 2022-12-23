@@ -24,7 +24,6 @@ font-family: 'Montserrat', sans-serif; */
 
 body {
 	max-width: 1440px;
-	height: 1080px;
 	margin: 0 auto;
 	padding: 42px 77px 24px 77px;
 	background-color: var(--bg-black);
@@ -40,6 +39,10 @@ ul {
 
 a {
 	text-decoration: none;
+}
+
+header {
+	margin-bottom: 177px;
 }
 
 nav {
@@ -89,6 +92,7 @@ nav {
 
 main {
 	display: flex;
+	margin-bottom: 239px;
 }
 
 .left-container {
@@ -198,12 +202,20 @@ footer p {
 		padding: 19px 12px 24px 12px;
 	}
 
+	header {
+		margin-bottom: 38px;
+	}
+
 	.collapse {
 		position: absolute;
 		min-height: 100vh;
 		height: 100%;
 		width: 100%;
 		top: 0;
+		left: 0;
+		background-color: var(--bg-black);
+		z-index: 4;
+		display: none;
 	}
 
 	.navbar-nav {
@@ -211,10 +223,74 @@ footer p {
 		justify-content: center;
 		align-items: center;
 		height: 100%;
-		display: none;
 	}
 
 	#hamburger {
 		display: block;
+	}
+
+	#close {
+		text-align: end;
+		margin-top: 22px;
+		margin-right: 20px;
+	}
+
+	.close {
+		display: none !important;
+	}
+
+	.open {
+		display: block !important;
+	}
+
+	main {
+		flex-direction: column;
+		gap: 37px;
+		margin-bottom: 148px;
+	}
+
+	.interior-title {
+		font-size: 36px;
+		line-height: 46px;
+	}
+
+	.interior-description {
+		font-size: 14px;
+		line-height: 17px;
+		width: 250px;
+	}
+
+	.interior-more {
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	.profile {
+		padding: 17px 71px 25px 19px;
+	}
+
+	.profile-header img {
+		width: 37px;
+	}
+
+	.profile-name {
+		font-size: 12px;
+		line-height: 15px;
+	}
+
+	.profile-title {
+		font-size: 10px;
+		line-height: 12px;
+	}
+
+	.profile-text {
+		width: 210px;
+		font-size: 18px;
+		line-height: 23px;
+	}
+
+	footer p {
+		font-size: 14px;
+		line-height: 17px;
 	}
 }

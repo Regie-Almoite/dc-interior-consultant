@@ -1,8 +1,13 @@
-console.log("hello");
-
 const hamburgerBtn = document.getElementById("hamburger");
+const smdNav = document.querySelector(".collapse");
+const closeBtn = document.getElementById("close");
+const links = document.querySelectorAll(".nav-link");
 
-console.log(hamburgerBtn);
 hamburgerBtn.addEventListener("click", function () {
-    alert("this");
+	smdNav.classList.add("open");
+	closeBtn.classList.add("open");
+});
+
+closeBtn.addEventListener("click", function () {
+	smdNav.classList.remove("open");
 });
